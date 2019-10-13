@@ -2,6 +2,10 @@
   "name": "use-reducer-effect",
   "version": "0.0.0-development",
   "description": "A tiny library that enables side effects with the useReducer hook",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jibbedi/use-reducer-effect.git"
+  },
   "keywords": [
     "react",
     "hooks",
@@ -51,7 +55,7 @@
     "tslint-config-prettier": "^1.17.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.3.1",
-    "semantic-release": "^15.13.16",
+    "semantic-release": "^15.13.24",
     "validate-commit-msg": "2.14.0"
   },
   "config": {
