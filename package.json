@@ -1,0 +1,67 @@
+{
+  "name": "use-reducer-effect",
+  "version": "0.0.0-development",
+  "description": "A tiny library that enables side effects with the useReducer hook",
+  "keywords": [
+    "react",
+    "hooks",
+    "reducer",
+    "useReducer",
+    "side",
+    "effects",
+    "sideeffects",
+    "side-effects",
+    "typescript"
+  ],
+  "author": "Johannes Kling",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "rollup -cw",
+    "build": "rollup -c",
+    "commit": "./node_modules/.bin/git-cz",
+    "test": "./node_modules/.bin/jest",
+    "semantic-release": "semantic-release"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/react": "16.8.1",
+    "@types/react-dom": "16.0.11",
+    "all-contributors-cli": "^6.7.0",
+    "commitizen": "3.1.1",
+    "cz-conventional-changelog": "2.1.0",
+    "husky": "2.4.1",
+    "jest": "^24.0.0",
+    "prettier": "^1.16.4",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
+    "react-testing-library": "^5.4.4",
+    "rollup": "^1.1.2",
+    "rollup-plugin-typescript2": "^0.19.2",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.3.1",
+    "semantic-release": "^15.13.16",
+    "validate-commit-msg": "2.14.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  }
+}
