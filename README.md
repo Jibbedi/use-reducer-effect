@@ -19,6 +19,44 @@ A tiny library that enables side effects with the useReducer hook
 [![Downloads](https://img.shields.io/npm/dm/use-reducer-effect.svg?style=flat)](https://www.npmjs.com/package/use-reducer-effect)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [The Problem](#the-problem)
+- [The Solution](#the-solution)
+- [Getting started](#getting-started)
+  - [🔗 API Call](#%f0%9f%94%97-api-call)
+- [Contributors](#contributors)
+
+## The Problem
+
+You are using the `useReducer` hook to manage your state, but you need a way to perform side effects (like fetching data from an API or logging) without mixing those concern together.
+
+## The Solution
+
+`use-reducer-effect` let's you define a second function next to the reducer function, where you can manage your side effects.
+
+This way you can run your side effect logic on certain actions, while also allowing side effects to update the store by dispatching new actions.
+
+## Getting started
+
+Install the library with
+
+```bash
+npm install --save use-reducer-effect
+```
+
+and import the hook into your code
+
+```jsx
+import { useReducerWithSideEffect } from "use-reducer-effect";
+```
+
+- [Examples](#examples)
+
+### [🔗 API Call](https://codesandbox.io/s/happy-noether-oecng)
+
+> Use the effect function to handle data fetching from an API
 
 ## Contributors
 
