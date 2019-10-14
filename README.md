@@ -25,6 +25,7 @@ A tiny library that enables side effects with the useReducer hook
 - [The Problem](#the-problem)
 - [The Solution](#the-solution)
 - [Getting started](#getting-started)
+- [The effect function](#the-effect-function)
 - [Examples](#examples)
   - [🔗 API Call](#%f0%9f%94%97-api-call)
 - [Contributors](#contributors)
@@ -52,6 +53,40 @@ and import the hook into your code
 ```jsx
 import { useReducerWithSideEffect } from "use-reducer-effect";
 ```
+
+## The effect function
+
+The effect function takes the same argument as the reducer function.
+`state` and `action`.
+
+Instead of modifying the state, it is responsible for handling side effects like making http calls.
+
+Let's assume we want to fetch from an API whenever an action called LOAD is dispatched.
+When the data is there, we want to feed it back into our reducer.
+
+Note: The effect function will be called after the reducer has updated the state.
+
+```jsx
+async function effect(state, action) {
+  switch (action.type) {
+    case ACTION_LOAD:
+      const response = await fetch(
+        `https://api.github.com/users/${action.payload}/repos`
+      );
+      const data = await response.json();
+      return {
+        type: ACTION_LOAD_SUCCESSFUL,
+        payload: data
+      };
+  }
+}
+```
+
+1. The Action LOAD is dispatched with a payload (in this case the GitHub username)
+2. The reducer function is run (which can update the state)
+3. The effect function is called, which has access to the updated state and the dispatched action
+4. The effect function triggers an http request and returns a promise with the action ACTION_LOAD_SUCCESSFUL and the API data as payload
+5. The reducer function is called again and updates the state
 
 ## Examples
 
