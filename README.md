@@ -25,6 +25,7 @@ A tiny library that enables side effects with the useReducer hook
 - [The Problem](#the-problem)
 - [The Solution](#the-solution)
 - [Getting started](#getting-started)
+- [Examples](#examples)
   - [🔗 API Call](#%f0%9f%94%97-api-call)
 - [Contributors](#contributors)
 
@@ -52,7 +53,7 @@ and import the hook into your code
 import { useReducerWithSideEffect } from "use-reducer-effect";
 ```
 
-- [Examples](#examples)
+## Examples
 
 ### [🔗 API Call](https://codesandbox.io/s/happy-noether-oecng)
 
