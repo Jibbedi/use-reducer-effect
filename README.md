@@ -121,7 +121,7 @@ const MyComponent = () => {
 3. The `effect function` is called, which has access to the updated state and the dispatched action (LOAD)
 4. The `effect function` triggers an http request
 5. It dispatches the `action ACTION_LOAD_SUCCESSFUL` with the API response data as payload
-6. The `reducer function` is called again and updates the state
+6. The `reducer function` is called again (ACTION_LOAD_SUCCESSFUL) and updates the state
 7. The `effect function` is called again with the new state (API response) and the `action ACTION_LOAD_SUCCESSFUL`. We didn't register a side effect for this action so it doesn't do anything.
 
 ## API
