@@ -34,6 +34,7 @@ A tiny library that enables side effects with the useReducer hook
 - [Examples](#examples)
   - [🔗 API Call](#%f0%9f%94%97-api-call)
   - [🔗 Logging](#%f0%9f%94%97-logging)
+- [Acknowledgments](#acknowledgments)
 - [Contributors](#contributors)
 
 ## The Problem
@@ -167,6 +168,10 @@ const MyComponent = () => {
 ### [🔗 Logging](https://codesandbox.io/s/holy-surf-2mft6)
 
 > Use createSideEffectReducer to create a useReducer like hook that logs all actions and state changes.
+
+## Acknowledgments
+
+This library is greatly inspired by the idea of [ngrx effects](https://ngrx.io/guide/effects), which is an awesome library if your working with Angular.
 
 ## Contributors
 
