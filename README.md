@@ -114,7 +114,7 @@ const MyComponent = () => {
 
 ## Data Flow
 
-![Data flow visualization](<static/Use Reducer Side Effect Demo.png>)
+![Data flow visualization](https://res.cloudinary.com/dgeve7dao/image/upload/v1580665922/Use_Reducer_Side_Effect_Demo.png)
 
 1. The `action LOAD` is dispatched with a payload (in this case the GitHub username)
 2. The `reducer function` is run and updated state is returned to the component
