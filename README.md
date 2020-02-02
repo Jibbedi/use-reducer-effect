@@ -108,7 +108,7 @@ async function effect(state, action) {
 
 // using the hook
 const MyComponent = () => {
-  const [dispatch, state] = useReducerWithSideEffects(reducer, effect);
+  const [state, dispatch] = useReducerWithSideEffects(reducer, effect);
 };
 ```
 
