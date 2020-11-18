@@ -55,7 +55,7 @@
     "tslint-config-prettier": "^1.17.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.3.1",
-    "semantic-release": "^15.13.24",
+    "semantic-release": "^17.2.3",
     "validate-commit-msg": "2.14.0"
   },
   "config": {
